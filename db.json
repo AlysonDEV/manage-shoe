@@ -1,0 +1,22 @@
+{
+  "ordens": [
+    {
+      "id": 432004000,
+      "Modelo": "ModeloNome",
+      "Artigo": "ArtigoNome",
+      "Pares": 540,
+      "Tamanhos": [
+        {
+          "33": 200,
+          "34": 240
+        }
+      ]
+    }
+  ],
+  "tempos": [
+    {
+      "id": "ArtigoNome",
+      "tempo": 0.80
+    }
+  ]
+}

@@ -4,8 +4,10 @@
 A mobile system created to manage models and queries in a shoe company.
 
 ## Technologies
-- [ ] Vite
-- [ ] React
-- [ ] Tailwind
+- [x] Vite
+- [x] React
+- [x] Tailwind
+- [ ] Sass
 - [ ] Backend Firestore
 - [ ] FakeApi to list in development
+- [ ] Routes (React-Router-Dom)s

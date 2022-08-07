@@ -1,7 +1,7 @@
 module.exports = {
   content: [
     "./index.html",
-    "./src/**/*.{vue,js,ts,jsx,tsx}",
+    "./src/**/*.tsx",
   ],
   theme: {
     extend: {
@@ -12,8 +12,15 @@ module.exports = {
     fontFamily: {
       'body': ['Plus Jakarta Sans', 'sans-serif']
     },
+    letterSpacing:{
+      'tight': '-.02em',
+      'widest': '.12em',
+    },
     colors: {
-      'primary': '#18224680'
+      'primary': '#18224680',
+      'gray-400': '#646160',
+      'black': '#000',
+      'white': '#fff'
     },
   },
   plugins: [],

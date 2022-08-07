@@ -1,5 +1,13 @@
-export function Button ( { TextInput } ) {
+
+import './buttonStyle.scss'
+
+interface ButtonPropsType {
+  textInput?: string;
+}
+
+export function Button ( {textInput}: ButtonPropsType ){
   return (
-    <button type="submit">{TextInput}</button>
+    <button type="submit" className="Button">{ textInput || 'Botão' }</button>
   )
 }
+

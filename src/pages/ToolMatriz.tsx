@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
+import { Tools } from "./Tools";
 
-export function Ferramentas() {
+export function ToolMatriz() {
   return(
     <>
       <h1>Ferramental Alta Frequência</h1>
@@ -51,6 +52,7 @@ export function Ferramentas() {
           </div>
         </div>
       </div>
+      <Link to={<Tools />} />
     </>
   )
 }

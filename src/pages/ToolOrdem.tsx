@@ -1,6 +1,6 @@
-import { Button } from "../../../components/Button";
+import { Button } from "../components/Button";
 
-export function Ordem(){
+export function ToolOrdem(){
   return (
     <div>
       <form>

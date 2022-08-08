@@ -22,6 +22,9 @@ module.exports = {
       'black': '#000',
       'white': '#fff'
     },
+    width: {
+      'screen-relative': '87.20vw'
+    }
   },
   plugins: [],
 }

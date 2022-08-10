@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { Button } from '../../components/Button'
 import './styles.scss'
 
@@ -34,9 +35,11 @@ export function Login() {
             id="userPass" 
           />
         </div>
-        <div className="mt-14">
-          <Button textInput='Continue' />
-        </div>
+        <Link to="/painel">
+          <div className="mt-14">
+              <Button textInput='Continue' />
+          </div>
+        </Link>
       </form>
 
     </div>

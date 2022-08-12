@@ -1,6 +1,39 @@
+import AliceCarousel from "react-alice-carousel";
 import { Link } from "react-router-dom";
 
 import '../styles.scss'
+
+const exemploFerramentas = [
+  {
+    Tamanho: '37',
+    Qtd: '1'
+  },
+  {
+    Tamanho: '38',
+    Qtd: '1'
+  },
+  {
+    Tamanho: '39',
+    Qtd: '1'
+  },
+  {
+    Tamanho: '40',
+    Qtd: '1'
+  },
+  {
+    Tamanho: '41',
+    Qtd: '1'
+  },
+  {
+    Tamanho: '42',
+    Qtd: '1'
+  },
+  {
+    Tamanho: '43',
+    Qtd: '1'
+  },
+
+]
 
 export function Ferramentas() {
   return(
@@ -42,45 +75,25 @@ export function Ferramentas() {
           <h2 className="uppercase font-extrabold text-[0.9375rem] leading-tight tracking-widest text-center text-white mt-6">
             Tamanho / Qtd de Jogos
           </h2>
-          <div className="flex flex-row gap-2.5">
-            <div className="cardSize">
-              <span className="!text-[24px]">37</span>
-              <span>1</span>
-            </div>
-            <div className="cardSize">
-              <span className="!text-[24px]">37</span>
-              <span>1</span>
-            </div>
-            <div className="cardSize">
-              <span className="!text-[24px]">37</span>
-              <span>1</span>
-            </div>
-            <div className="cardSize">
-              <span className="!text-[24px]">37</span>
-              <span>1</span>
-            </div>
-            <div className="cardSize">
-              <span className="!text-[24px]">37</span>
-              <span>1</span>
-            </div>
-            <div className="cardSize">
-              <span className="!text-[24px]">37</span>
-              <span>1</span>
-            </div>
-            <div className="cardSize">
-              <span className="!text-[24px]">37</span>
-              <span>1</span>
-            </div>
-            <div className="cardSize">
-              <span className="!text-[24px]">37</span>
-              <span>1</span>
-            </div>
-            <div className="cardSize">
-              <span className="!text-[24px]">37</span>
-              <span>1</span>
-            </div>
-            
-          </div>
+          <AliceCarousel 
+            mouseTracking 
+            autoWidth
+            disableDotsControls={true}
+            disableButtonsControls={true}
+            paddingLeft={14}
+            paddingRight={200}
+          >
+
+            {exemploFerramentas.map(ferramenta =>(
+              <div className="cardSize" key={ferramenta.Tamanho}>
+                <span className="!text-[24px]">{ferramenta.Tamanho}</span>
+                <span>{ferramenta.Qtd}</span>
+              </div>  
+            ))}
+              
+
+
+          </AliceCarousel>
         </div>
       </div>
     </div>

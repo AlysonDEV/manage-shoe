@@ -4,7 +4,7 @@ import '../styles.scss'
 
 export function Ferramentas() {
   return(
-    <div className="h-screen w-screen bg-tool-background bg-center bg-cover">
+    <div className="h-screen w-screen bg-center bg-cover ferramentas">
       <div className="bg-primary h-full w-full flex flex-col items-center">
         <h1 className="pt-11 pb-6 text-[1.4375rem] uppercase font-extrabold w-screen-relative text-center text-white">
           Ferramental Alta Frequência
